@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToEF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    
+    <section class="header">
+       
+         <nav>
+              <!-- LOGO -->
+            <a href="index.html "><img src="img/logo2.png" class="logo" alt=""></a>
+             <!-- NAVBAR -->
+              <div class="nav-links" id="navLinks">
+                <!-- For the Navbar phone size view -->
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="activities.html">activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+         </nav>
+
+         <div class="text-box">
+            <h1>Tears of Earth Foundation</h1>
+            <p>This Foundation is a non-patisan and non-profit organization focused on environmental education and sustainable development. 
+                <br>The Foundation seeks to Protect and Preserve the ecosystem at the local and national level.
+            </p>
+            <a href="about.html" class="hero-btn">Read More</a>
+         </div>
+         
+    </section>
+
+     <!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu (){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu (){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    
+        
+</section>
+</body>
+</html>
